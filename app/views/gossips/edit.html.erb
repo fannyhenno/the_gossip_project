@@ -1,0 +1,17 @@
+<h1>Ca c'est du Gossip</h1>
+
+
+<h1>Balance ton gossip</h1>
+
+<%= form_tag (gossips_path) do %>
+ 
+  <%= label_tag 'anonymous_author', 'Tu en as encore ? ' %>
+  <%= text_field_tag 'anonymous_author' %>
+ 
+  <%= label_tag 'content', 'Remets-toi à table !' %>
+  <%= text_area_tag 'content' %>
+ 
+  <%= submit_tag "J'espère que c'est plus croustillant !"%>
+<% end %>
+
+<p> delete <%= link_to 'si tu regrettes', @gossip, method: :delete %> </p>

@@ -1,0 +1,11 @@
+<h1>Bim !!! Gros Gossip</h1>
+
+<p>auteur : <%= @gossip.anonymous_author %></p>
+
+<p>Gossip du jour : <%= @gossip.content %></p>
+
+
+<%= link_to 'Edit', edit_gossip_path(@gossip) %>
+<%= link_to 'Destroy', gossip_path(@gossip),
+         method: :delete,
+         data: { confirm: 'Are you sure?' } %>

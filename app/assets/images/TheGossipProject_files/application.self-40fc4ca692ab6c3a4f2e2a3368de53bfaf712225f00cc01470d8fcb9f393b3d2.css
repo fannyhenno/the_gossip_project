@@ -10,9 +10,10 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
+
 h1 {
   color: rgb(0, 51, 102) ;
   text-align: center ;
@@ -25,10 +26,5 @@ p {
 
 table {
   color: rgb(102, 102, 153);
-  border: 1px blue dotted;
-  display: flex;
-  margin: auto;
-}
-td {
-  text-align: justify;	
+  border: 1px blue dotted
 }
